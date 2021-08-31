@@ -2,3 +2,4 @@ Flask==1.1.1
 requests
 line-bot-sdk
 twder
+gunicorn==19.3.0
