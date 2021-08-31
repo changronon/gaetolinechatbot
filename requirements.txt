@@ -1,4 +1,4 @@
-Flask
-line-bot-sdk
+Flask==1.1.1
 requests
-gunicorn
+line-bot-sdk
+twder
