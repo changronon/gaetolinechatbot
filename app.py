@@ -36,6 +36,11 @@ def callback():
 
     return 'OK'
 
+def line_reply(event, msg_text):
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextMessage(text=msg_text, type="text")
+        )
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
