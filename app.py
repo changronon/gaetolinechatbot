@@ -48,12 +48,13 @@ def handle_message(event):
     print("event.source.user_id:", event.source.user_id)
     print("event.message.text:", event.message.text)
     
+    line_reply(event, "測試：")
+    
     # 加了這行
     if event.source.user_id != "Udeadbeefdeadbeefdeadbeefdeadbeef":
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=event.message.text))
-            line_reply(event, "測試：")
 
 if __name__ == "__main__":
     app.run()
