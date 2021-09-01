@@ -19,7 +19,7 @@ handler = WebhookHandler("6f023657c5566249390ba0a6be3038ac")
 # Push訊息到指定的UserID中
 
 @app.route("/callback", methods=['POST'])
-def callback(request):
+def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
 
