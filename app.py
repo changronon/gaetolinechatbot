@@ -87,5 +87,5 @@ def handle_message(event):
         line_reply(event, "輸入錯誤!!\n%s"%msg_tip)
             
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run()
 
