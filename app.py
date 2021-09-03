@@ -18,8 +18,8 @@ msg_tip = """
 """
 
 # Line Bot驗證
-line_bot_api = LineBotApi("17Q3iphWfqxTnRoMhNRlTHDvCQNJp1iW2H8n23MNNeZx+bwcs44nnkzgwzO2qMwv622SeL8S876d/ZmB9SMTjm7dujUHk2NgxM77sbU/VWd3qDUvyC1s6oAS+4J+xi2OZhkaN3WFaoBf+8S2lWo5lgdB04t89/1O/w1cDnyilFU=")    
-handler = WebhookHandler("f0c3d0287be0027bf4ca31150ec0215c")
+line_bot_api = LineBotApi("g/nQVJOVCYLs/qqQsXuzn3NNgnCAT32o+xoEcOFBhjK+NUEAtqujMPAo+bpTj9xlJ4kny8z750qqUkEld3Q3S+kSurmLTkCV5Ti0vNb4ln6Z8ABnuRva4LA32pj53WVPf88gHzNwSpiiuZeiufEBSAdB04t89/1O/w1cDnyilFU=")    
+handler = WebhookHandler("1ab2a06316420a3b5ff91b0510618a60")
 # Push訊息到指定的UserID中
 #line_bot_api.push_message("您的Line Bot UserID", TextSendMessage(text="歡迎使用Line 匯率查詢機器人"))
 
