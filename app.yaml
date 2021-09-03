@@ -10,6 +10,8 @@ runtime_config:
 # for production use. For more information, see:
 # https://cloud.google.com/appengine/docs/flexible/python/configuring-your-app-with-app-yaml
 handlers:
+- url: /callback
+  static_dir: callback/
 - url: /.*
   script: auto
 manual_scaling:
