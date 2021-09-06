@@ -1,5 +1,4 @@
 Flask
 requests
 line-bot-sdk
-twder
 gunicorn
