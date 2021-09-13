@@ -3,3 +3,4 @@ requests
 line-bot-sdk
 twder
 gunicorn
+configparser

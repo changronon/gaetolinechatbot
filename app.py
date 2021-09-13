@@ -3,6 +3,7 @@ import twder
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import *
+import configparser
 
 app = Flask(__name__)
 
@@ -17,9 +18,13 @@ msg_tip = """
 即回傳新台幣兌換美金匯率
 """
 
+# LINE 聊天機器人的基本資料
+config = configparser.ConfigParser()
+config.read('config.ini')
+
 # Line Bot驗證
-line_bot_api = LineBotApi('g/nQVJOVCYLs/qqQsXuzn3NNgnCAT32o+xoEcOFBhjK+NUEAtqujMPAo+bpTj9xlJ4kny8z750qqUkEld3Q3S+kSurmLTkCV5Ti0vNb4ln6Z8ABnuRva4LA32pj53WVPf88gHzNwSpiiuZeiufEBSAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('1ab2a06316420a3b5ff91b0510618a60')
+line_bot_api = LineBotApi(config.get('line-bot', 'channel_access_token'))    
+handler = WebhookHandler(config.get('line-bot', 'channel_secret'))
 # Push訊息到指定的UserID中
 #line_bot_api.push_message("您的Line Bot UserID", TextSendMessage(text="歡迎使用Line 匯率查詢機器人"))
 
